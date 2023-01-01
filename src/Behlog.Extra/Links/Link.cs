@@ -16,7 +16,7 @@ public class Link : AggregateRoot<Guid>, IHasMetadata
     public string? ImagePath { get; protected set; }
     public string? Target { get; protected set; }
     public string? Description { get; protected set; }
-    
+    public EntityStatus Status { get; protected set; }
     
     #endregion
 
