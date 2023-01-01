@@ -18,6 +18,10 @@ public class ContactMessage : AggregateRoot<Guid>, IHasMetadata
     public string Message { get; protected set; }
     public DateTime? SeenDate { get; protected set; }
     public DateTime? LastStatusChanged { get; protected set; }
+    public ContactMessageStatus Status { get; protected set; }
+    public string? ReplyMessage { get; protected set; }
+    public DateTime? ReplyDate { get; protected set; }
+    public string? ReplyByUserId { get; protected set; }
 
     public DateTime CreatedDate { get; }
     public DateTime? LastUpdated { get; }

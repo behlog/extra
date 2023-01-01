@@ -36,6 +36,11 @@ public enum ContactMessageStatus
     InProgress = 3,
     
     /// <summary>
+    /// When a reply message sent for this Contact Message.
+    /// </summary>
+    Replied = 4,
+    
+    /// <summary>
     /// When we done with the Contact Message.
     /// </summary>
     Done = 10

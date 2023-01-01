@@ -6,10 +6,10 @@ namespace Behlog.Extra;
 public class WebsiteVisit : BehlogEntity<long>
 {
     private WebsiteVisit() { }
-
-
+    
     #region props
-
+    
+    public Guid WebsiteId { get; protected set; }
     public string Url { get; protected set; }
     public string IpAddress { get; protected set; }
     public string? Referer { get; protected set; }
