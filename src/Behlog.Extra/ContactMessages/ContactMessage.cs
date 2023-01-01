@@ -3,9 +3,11 @@ namespace Behlog.Extra;
 
 public class ContactMessage : AggregateRoot<Guid>, IHasMetadata
 {
-    
-    private ContactMessage() { }
-    
+
+    private ContactMessage()
+    {
+    }
+
     #region props
 
     public string AuthorName { get; protected set; }
@@ -14,7 +16,9 @@ public class ContactMessage : AggregateRoot<Guid>, IHasMetadata
     public string? Email { get; protected set; }
     public string? Website { get; protected set; }
     public string Message { get; protected set; }
-    
+    public DateTime? SeenDate { get; protected set; }
+    public DateTime? LastStatusChanged { get; protected set; }
+
     public DateTime CreatedDate { get; }
     public DateTime? LastUpdated { get; }
     public string? CreatedByUserId { get; }

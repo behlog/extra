@@ -24,6 +24,10 @@
             <HintPath>..\..\..\..\Idyfa\src\Idyfa.Core\bin\Debug\net6.0\Idyfa.Core.dll</HintPath>
         </Reference>
     </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="ContactMessages\Commands" />
+    </ItemGroup>
     
     
 </Project>
