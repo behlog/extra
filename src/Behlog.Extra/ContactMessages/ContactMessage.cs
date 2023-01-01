@@ -23,6 +23,9 @@ public class ContactMessage : AggregateRoot<Guid>, IHasMetadata
     public DateTime? ReplyDate { get; protected set; }
     public string? ReplyByUserId { get; protected set; }
 
+    public string? UserNotes { get; protected set; }
+    public string? AssignedToUserId { get; protected set; }
+    
     public DateTime CreatedDate { get; }
     public DateTime? LastUpdated { get; }
     public string? CreatedByUserId { get; }
