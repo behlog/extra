@@ -14,7 +14,7 @@ public class ContactMessage : AggregateRoot<Guid>, IHasMetadata
     public string? Subject { get; protected set; }
     public string? PhoneNumber { get; protected set; }
     public string? Email { get; protected set; }
-    public string? Website { get; protected set; }
+    public Guid WebsiteId { get; protected set; }
     public string Message { get; protected set; }
     public DateTime? SeenDate { get; protected set; }
     public DateTime? LastStatusChanged { get; protected set; }
