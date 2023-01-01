@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>Behlog.Extra</AssemblyName>
+        <RootNamespace>Behlog.Extra</RootNamespace>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>Behlog.Extra</PackageId>
+        <Title>Behlog CMS Extension and Extra features library</Title>
+        <Authors>Iman Nemati</Authors>
+        <Description>Behlog CMS is a Content Management System that distributed over Nuget. You can install it with Nuget and start your Website or blog on top of it's ready to use Domain and infrastructure. You can then install other Behlog libraries to extend the functionalities of your website or blog. The main idea is to have a dependency that can updated via Nuget, and to have websites with modern technologies that based on a strong library.</Description>
+        <Copyright>(c) 2022 Iman Nemati</Copyright>
+        <OutputType>Library</OutputType>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="Behlog.Core">
+            <HintPath>..\..\..\core\src\bin\Debug\net6.0\Behlog.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="Idyfa.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+            <HintPath>..\..\..\..\Idyfa\src\Idyfa.Core\bin\Debug\net6.0\Idyfa.Core.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    
+    
+</Project>
